@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    display: flex;
+    user-select: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ledger {
+    background-color: #1E1E2D;
+    padding: 20px;
+    flex: 1;
+    color: white;
+}
+
+.ledger h2 {
+    text-transform: uppercase;
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.ledger h4, .ledger h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inc-exp-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.inc, .exp {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px solid;
+    font-size: 18px;
+}
+
+.inc {
+    border-color: #28a745;
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.exp {
+    border-color: #dc3545;
+    color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.btn {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Transaction Section */
+.transaction {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 550px;
+}
+
+.transaction h3 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.trans {
+    list-style: none;
+}
+
+.trans li {
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+.trans li.inc {
+    border-left: 5px solid #28a745;
+    background: rgba(40, 167, 69, 0.1);
+}
+
+.trans li.exp {
+    border-left: 5px solid #dc3545;
+    background: rgba(220, 53, 69, 0.1);
+}
+
+.btn-del {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.trans li:hover .btn-del {
+    display: block;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}

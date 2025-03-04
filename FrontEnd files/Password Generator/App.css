@@ -1,0 +1,145 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Heading */
+.heading h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.heading p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* Password length input */
+.pass-length label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pass-length input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+/* Options */
+.options {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.options input {
+  margin-right: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Generate button */
+.gen-btn {
+  background: #ff9800;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.gen-btn:hover {
+  background: #ffb74d;
+}
+
+/* Password Display */
+.show-password {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.show-password input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.copy-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.copy-btn:hover {
+  background: #66bb6a;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+  .heading h1 {
+    font-size: 20px;
+  }
+  .gen-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
